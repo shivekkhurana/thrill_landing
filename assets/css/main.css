@@ -1,0 +1,21 @@
+body{
+	background: #eee;
+}
+
+#fixed_bottom{
+	position:fixed;
+	bottom:0;
+	height:50px;
+	background:#fff;
+	opacity: 0.5;
+	width:100%;
+	text-align: center;
+}
+
+#logo{
+	position: relative;
+	width:50px;
+	background-size:100% 100%;
+	height:inherit;
+	background: url("file:///home/shivekkhurana/D/tmp/thrill_landing/assets/img/thrill_infinity.png") 0 0 no-repeat;
+}
