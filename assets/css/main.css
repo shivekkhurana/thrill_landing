@@ -7,6 +7,11 @@ body{
 
 }
 
+img{
+	max-height:100%;
+}
+
+
 #fixed_bottom{
 	position:fixed;
 	bottom:0;
@@ -36,7 +41,6 @@ body{
 
 #logo img{
 	float:left; 
-	max-height:100%;
 }
 
 #download_links{
