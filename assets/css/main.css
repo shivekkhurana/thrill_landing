@@ -1,3 +1,8 @@
+@font-face{
+	font-family:avenir;
+	src:url("../avenir_light.ttf") format('truetype');
+}
+
 body{
 	background: #eee;
 }
@@ -5,17 +10,41 @@ body{
 #fixed_bottom{
 	position:fixed;
 	bottom:0;
-	height:50px;
+	height:150px;
 	background:#fff;
-	opacity: 0.5;
+	opacity: 0.95;
 	width:100%;
 	text-align: center;
 }
 
 #logo{
 	position: relative;
-	width:50px;
-	background-size:100% 100%;
-	height:inherit;
-	background: url("file:///home/shivekkhurana/D/tmp/thrill_landing/assets/img/thrill_infinity.png") 0 0 no-repeat;
+	width:265px;
+	height:100px;
+	margin:25px;
+	float:left;
+}
+
+#logo span{
+	float:right;
+	font-family: avenir;
+	font-weight: 100;
+	font-size:50px;
+	margin-top: 45px;
+	color:#e65c51;
+}
+
+#logo img{
+	float:left; 
+	max-height:100%;
+}
+
+#download_links{
+	float:right;
+	margin:40px;
+}
+
+#download_links a{
+	height: 100px;
+	margin:15px;
 }
