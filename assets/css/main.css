@@ -11,27 +11,30 @@ img{
 	max-height:100%;
 }
 
+#big-video-wrap{
+	background: rgba(0,0,0,0.1);
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: url('/media/blur.svg#blur'); /* for Firefox */
+}
 
 #fixed_bottom{
 	position:fixed;
 	bottom:0;
-	height:150px;
+	height:100px;
 	background:#fff;
 	opacity: 0.95;
 	width:100%;
 	text-align: center;
 }
 
-#logo{
-	position: relative;
-	width:265px;
-	height:100px;
-	margin:25px;
+#logo img{
+	max-height: 100px;
 	float:left;
 }
-
 #logo span{
-	float:right;
+	float:left;
 	font-family: avenir;
 	font-weight: 100;
 	font-size:50px;
@@ -39,16 +42,10 @@ img{
 	color:#e65c51;
 }
 
-#logo img{
-	float:left; 
-}
-
 #download_links{
 	float:right;
-	margin:40px;
+	margin-top: 18px;
 }
 
-#download_links a{
-	height: 100px;
-	margin:15px;
-}
+/* Everything good upto 768px. */
+@media only screen and (max-width: 767px) {}
