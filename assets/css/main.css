@@ -42,9 +42,16 @@ img{
 	color:#e65c51;
 }
 
+.screens{
+	width:100%;
+	height: 100%;
+	position: block;
+}
+
 .screen_container{
 	width:100%;
-	overflow: hidden;
+	height: 100%;
+	position:relative;
 	z-index:999999;
 }
 
@@ -60,6 +67,7 @@ img{
 	padding:20px;
 	color:#fff;
 	float:left;
+	z-index:999998;
 }
 
 .description .title{
@@ -79,6 +87,7 @@ img{
 	background:#fff;
 	opacity: 0.95;
 	width:100%;
+	z-index:999999;
 	text-align: center;
 }
 
