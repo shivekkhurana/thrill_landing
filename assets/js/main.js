@@ -10,5 +10,8 @@ $(function(){
 	BV.init();
 	BV.show("assets/bg_video.mp4");
 
-	$('.description').verticalAlign();
+	$('.intro_text_container').css({height:$(window).height()-200 + "px"});
+	$('#intro_text').verticalAlign();
+
+	//$('.description').verticalAlign();
 });
