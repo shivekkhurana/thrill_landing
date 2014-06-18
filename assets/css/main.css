@@ -3,8 +3,14 @@
 	src:url("../avenir_light.ttf") format('truetype');
 }
 
-body{
+@font-face{
+	font-family:sacramento;
+	src:url("../sacramento.ttf") format('truetype');
+}
 
+body{
+	font-family: avenir;
+	font-weight: 100;
 }
 
 img{
@@ -19,6 +25,35 @@ img{
 	filter: url('/media/blur.svg#blur'); /* for Firefox */
 }
 
+#intro_text{
+	font-family:sacramento;
+	color:#fff;
+	margin:100px 0 0;
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+#intro_text span{
+	color:#e65c51;
+}
+
+.description{
+	background: rgba(0,0,0,0.5);
+	padding:20px;
+	color:#fff;
+}
+
+.description .title{
+	font-size: 25px;
+	margin-bottom: -15px;
+	text-align: center;
+}
+
+.description .connector{
+	margin-left: -140px;
+}
+
 #fixed_bottom{
 	position:fixed;
 	bottom:0;
@@ -31,12 +66,11 @@ img{
 
 #logo img{
 	max-height: 100px;
+	width:auto;
 	float:left;
 }
 #logo span{
 	float:left;
-	font-family: avenir;
-	font-weight: 100;
 	font-size:50px;
 	margin-top: 45px;
 	color:#e65c51;
@@ -47,5 +81,8 @@ img{
 	margin-top: 18px;
 }
 
+.screen{
+	max-height: 85%;
+}
 /* Everything good upto 768px. */
 @media only screen and (max-width: 767px) {}
