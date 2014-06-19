@@ -42,7 +42,7 @@ img{
 	color:#e65c51;
 }
 
-.screens{
+#screens{
 	width:100%;
 	height: 100%;
 	position: block;
@@ -70,6 +70,11 @@ img{
 	z-index:999998;
 }
 
+.screen_container.odd{
+	margin-right: 30px;
+	float:right;
+}
+
 .screen_container.odd .phone{
 	float:right;
 }
@@ -77,6 +82,16 @@ img{
 .screen_container.odd .description{
 	float:right;
 }
+
+.screen_container.odd .description .connector{
+	float:right;
+	margin-right:-140px;
+}
+
+.screen_container.odd .description .text{
+	margin-top: 30px;
+}
+
 .description .title{
 	font-size: 25px;
 	margin-bottom: -15px;
@@ -85,6 +100,24 @@ img{
 
 .description .connector{
 	margin-left: -140px;
+}
+
+#meta{
+	width: 100%;
+	background: #e65c51;
+	float:left;
+	margin-bottom: 70px;
+}
+
+#meta .contact{
+	padding:30px;
+	color:#fff;
+	font-family: avenir;
+}
+
+#meta .contact h3 {
+	color:#fff;
+	font-family: avenir;	
 }
 
 #fixed_bottom{
@@ -104,6 +137,7 @@ img{
 	margin-left:30px;
 	float:left;
 }
+
 #logo span{
 	float:left;
 	font-size:35px;
