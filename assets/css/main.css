@@ -19,6 +19,7 @@ img{
 }
 
 #big-video-wrap{
+	display: none;
 	background: rgba(0,0,0,0.1);
 	filter: blur(3px);
 	-webkit-filter: blur(3px);
@@ -28,7 +29,15 @@ img{
 	
 }
 
-.intro_text_container{}
+#social_links{
+	position: fixed;
+	top:0;
+	margin-right: 30px;
+}
+
+#social_links a {
+	padding:20px;
+}
 
 #intro_text{
 	font-family:sacramento;

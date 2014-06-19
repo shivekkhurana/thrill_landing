@@ -12,15 +12,12 @@ $(function(){
 	BV.init();
 	BV.show("assets/bg_video.mp4");
 
-	$('#big-video-wrap').css({
-		width:$(window).width(),
-		height:$(window).height()
+	BV.getPlayer().on('durationchange',function(){
+	   $('#big-video-wrap').fadeIn();
 	});
 
 
 	$('.intro_text_container').css({height:$(window).height()-200 + "px"});
 	$('#intro_text').verticalAlign();
-
-	//$('.screens').css({"margin-top":$('.intro_text_container').height()});
-	//$('.description').verticalAlign();
+	
 });
