@@ -18,6 +18,9 @@ img{
 	max-height:100%;
 }
 
+#container{
+	display: none;
+}
 #loader{
 	display: block;
 	margin:0 auto;

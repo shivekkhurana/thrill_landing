@@ -6,8 +6,6 @@ jQuery.fn.verticalAlign = function ()
 };
 
 $(function(){
-	new WOW().init();
-	
 	var BV = new $.BigVideo({doLoop:true});
 	BV.init();
 	BV.show("assets/bg_video.mp4");
@@ -17,6 +15,8 @@ $(function(){
 	BV.getPlayer().on('durationchange',function(){
 		$("#loader").fadeOut(0);
 		$('#big-video-wrap').fadeIn();
+		$('#container').fadeIn(0);
+		new WOW().init();
 	});
 
 
