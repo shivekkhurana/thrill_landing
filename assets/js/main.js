@@ -26,6 +26,10 @@ $(function(){
 		'height' : $(window).height() + 'px',
 		'width' : $(window).width() + 'px',
 		'responsive' : true,
-		animspeed : 2000
+		animspeed : 5000,
+		showcontrols : false,
+		showmarkers : false,
+		hoverpause : false,
+		randomstart : false
 	});
 });

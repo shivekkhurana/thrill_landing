@@ -89,6 +89,7 @@ img{
 	float: left;
 	margin-left: 100px;
 	z-index:999998;
+	margin-top: 200px;
 }
 
 .description .title{
