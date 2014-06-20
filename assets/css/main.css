@@ -70,11 +70,15 @@ img{
 .screen_container{
 	z-index:999999;
 	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
 }
 
 .phone{
-	width: 360px;
+	max-width: 360px;
 	float:left;
+	margin-left: 40px;
 }
 
 .description{
@@ -82,29 +86,9 @@ img{
 	background: rgba(0,0,0,0.5);
 	padding:20px;
 	color:#fff;
+	float: left;
+	margin-left: 100px;
 	z-index:999998;
-}
-
-.screen_container.odd{
-	margin-right: 30px;
-	float:right;
-}
-
-.screen_container.odd .phone{
-	float:right;
-}
-
-.screen_container.odd .description{
-	float:right;
-}
-
-.screen_container.odd .description .connector{
-	float:right;
-	margin-right:-140px;
-}
-
-.screen_container.odd .description .text{
-	margin-top: 30px;
 }
 
 .description .title{
