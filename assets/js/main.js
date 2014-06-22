@@ -35,6 +35,7 @@ $(function(){
 				'width' : $(window).width() + 'px',
 				'responsive' : true,
 				animspeed : 3000,
+				animduration:1000,
 				showcontrols : false,
 				showmarkers : false,
 				hoverpause : false,
