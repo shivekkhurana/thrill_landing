@@ -60,7 +60,6 @@ img{
 	color:#e65c51;
 }
 
-/*from here */
 #screens{
 	width:100%;
 	height: 100%;
@@ -101,21 +100,21 @@ img{
 .description .connector{
 	margin-left: -140px;
 }
-/*to here*/
-#meta{
+
+.meta{
 	width: 100%;
-	background: #e65c51;
+	background: rgba(255,255,255,0.15);
 	float:left;
 	margin-bottom: 70px;
 }
 
-#meta .contact{
+.meta .contact{
 	padding:30px;
 	color:#fff;
 	font-family: avenir;
 }
 
-#meta .contact h3 {
+.meta .contact h3 {
 	color:#fff;
 	font-family: avenir;	
 }

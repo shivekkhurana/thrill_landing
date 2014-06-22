@@ -639,9 +639,10 @@
                     }
 
                     // fade out current
-                    $slides.eq(state.currentindex).fadeOut(settings.animduration);
                     // fade in next
                     $slides.eq(state.nextindex).fadeIn(settings.animduration, function(){
+
+                        $slides.eq(state.currentindex).fadeOut(settings.animduration);
 
                         // update state variables
                         state.animating = false;
