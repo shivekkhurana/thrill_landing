@@ -29,6 +29,6 @@ $(function(){
 		forceHeight:true
 	});
 
-	//$('#screens').css({"margin-top":$(".intro_text_container").height() + 'px'})
+	$('#screens').css({"margin-top":$(window).height() + 'px'})
 
 });
