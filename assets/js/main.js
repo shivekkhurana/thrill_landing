@@ -14,6 +14,13 @@ function isScrolledIntoView(elem)
 	return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+function goToByScroll(elem){
+
+	$('html,body').animate({
+		scrollTop: $(elem).offset().top
+	},'slow');
+}
+
 $(function(){
 	var BV = new $.BigVideo({doLoop:true});
 	BV.init();
@@ -24,12 +31,15 @@ $(function(){
 	BV.getPlayer().on('durationchange',function(){
 		$('#loader').fadeOut(0);
 		$('#big-video-wrap').fadeIn();
+		$('.intro_text_container').addClass("animated fadeInDownBig");
 		$('#container').fadeIn(0);
 	});
 
 	$(window).scroll(function() {    
 		if(isScrolledIntoView($('#screens')))
 		{
+			//$('.intro_text_container').addClass("animated fadeOutUp")
+			goToByScroll('#screens');
 			$('#screens').addClass("animated fadeInUpBig").bjqs({
 				'height' : $(window).height() + 'px',
 				'width' : $(window).width() + 'px',

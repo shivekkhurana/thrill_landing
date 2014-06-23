@@ -77,6 +77,7 @@ img{
 .phone{
 	max-width: 360px;
 	float:left;
+	margin-top: 20px;
 	margin-left: 40px;
 }
 
