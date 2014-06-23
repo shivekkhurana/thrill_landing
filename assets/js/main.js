@@ -1,8 +1,8 @@
 jQuery.fn.verticalAlign = function ()
 {
-    return this
-            .css('margin-top',($(this).parent()
-            .height() - $(this).height())/2 + 'px' )
+	return this
+		.css('margin-top',($(this).parent()
+		.height() - $(this).height())/2 + 'px' )
 };
 
 
@@ -16,15 +16,13 @@ $(function(){
 	BV.getPlayer().on('durationchange',function(){
 		$('#loader').fadeOut(0);
 		$('#big-video-wrap').fadeIn();
-		$('.intro_text_container').addClass("animated fadeInUp");
+		$('#intro_text').addClass("animated fadeInUp");
 	});
 
-	$('.intro_text_container').css({
+	$('#intro_text').css({
 		"margin-top":($(window).height()/2) - 60 + 'px',
 		"margin-bottom":($(window).height()/2) - 60 + 'px'
 	});
-
-	$('#intro_text').verticalAlign();
 	
 
 	var s = skrollr.init({
