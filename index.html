@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="assets/css/base.css">
 	<link rel="stylesheet" href="assets/css/bigvideo.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/bjqs.css">
+	<!--link rel="stylesheet" href="assets/css/bjqs.css"-->
 
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -35,62 +35,28 @@
 		</div>
 
 		<div class="intro_text_container">
-			<div id="intro_text">Find Someone <span>Thrilling</span></div>
+			<div id="intro_text" data-0="opacity:1.0;" data-200="opacity:0.0;">Find Someone <span>Thrilling</span></div>
 		</div>
 
 		<div id="screens">
-			<ul class="bjqs">
-				<li>
-					<div class="screen_container" id="about">
-						<div class="phone">
-							<img src="assets/img/screens/about.png" class="screen" alt="">
-						</div>
 
-						<div class="description">
-							<div class="title">He Applies. She Decides.</div>
-							<div class="connector">
-								<img src="assets/img/about_connector.png" alt="">
-							</div>
-							<div class="text">A fresh, safe take on meeting amazing new people in India.</div>
-						</div>
+			<div class="screen_container" data-0="opacity:0" id="velfie">
+				<div class="phone">
+					<img src="assets/img/screens/velfie.png" alt="">
+				</div>
+
+				<div class="description">
+					<div class="title">But first let me take a velfie.</div>
+					<div class="connector">
+						<img src="assets/img/velfie_connector.png" alt="">
 					</div>
-				</li>
-
-				<li>
-					<div class="screen_container" id="velfie">
-						<div class="phone">
-							<img src="assets/img/screens/velfie.png" class="screen" alt="">
-						</div>
-
-						<div class="description">
-							<div class="title">But first let me take a velfie.</div>
-							<div class="connector">
-								<img src="assets/img/velfie_connector.png" alt="">
-							</div>
-							<div class="text">Introducing video profiles to really understand who someone is before you find them thrilling.</div>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="screen_container" id="stream">
-						<div class="phone">
-							<img src="assets/img/screens/stream.png" class="screen" alt="">
-						</div>
-
-						<div class="description">
-							<div class="title">Put some shit here</div>
-							<div class="connector">
-								<img src="assets/img/stream_connector.png" alt="">
-							</div>
-							<div class="text">And here too</div>
-						</div>
-					</div>
-				</li>
-			</ul>
+					<div class="text">Introducing video profiles to really understand who someone is before you find them thrilling.</div>
+				</div>
+			</div>
+		
 		</div>
 
-		<div class="meta">
+		<div id="meta">
 			<div class="contact">
 				<h3>Contact</h3>
 				We would love to hear from you. Feel free to reach out to us about anything at info@thrillapp.com. Or, by social media above.
@@ -115,6 +81,7 @@
 <script src="assets/js/video.js"></script>
 <script src="assets/js/bigvideo.js"></script>
 <script src="assets/js/bjqs.js"></script>
+<script src="assets/js/skrollr.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 </html>

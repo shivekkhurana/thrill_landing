@@ -5,21 +5,6 @@ jQuery.fn.verticalAlign = function ()
             .height() - $(this).height())/2 + 'px' )
 };
 
-function isScrolledIntoView(elem)
-{
-	var docViewTop = $(window).scrollTop();
-	var docViewBottom = docViewTop + $(window).height();
-	var elemTop = $(elem).offset().top;
-	var elemBottom = elemTop + $(elem).height();
-	return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-
-function goToByScroll(elem){
-
-	$('html,body').animate({
-		scrollTop: $(elem).offset().top
-	},'slow');
-}
 
 $(function(){
 	var BV = new $.BigVideo({doLoop:true});
@@ -31,30 +16,21 @@ $(function(){
 	BV.getPlayer().on('durationchange',function(){
 		$('#loader').fadeOut(0);
 		$('#big-video-wrap').fadeIn();
-		$('.intro_text_container').addClass("animated fadeInDownBig");
-		$('#container').fadeIn(0);
+		$('.intro_text_container').addClass("animated fadeInUp");
 	});
 
-	$(window).scroll(function() {    
-		if(isScrolledIntoView($('#screens')))
-		{
-			//$('.intro_text_container').addClass("animated fadeOutUp")
-			goToByScroll('#screens');
-			$('#screens').addClass("animated fadeInUpBig").bjqs({
-				'height' : $(window).height() + 'px',
-				'width' : $(window).width() + 'px',
-				'responsive' : true,
-				animspeed : 3000,
-				animduration:1000,
-				showcontrols : false,
-				showmarkers : false,
-				hoverpause : false,
-				randomstart : false
-			});
-		}
+	$('.intro_text_container').css({
+		"margin-top":($(window).height()/2) - 60 + 'px',
+		"margin-bottom":($(window).height()/2) - 60 + 'px'
 	});
 
-	$('.intro_text_container').css({height:$(window).height()-200 + 'px'});
 	$('#intro_text').verticalAlign();
 	
+
+	var s = skrollr.init({
+		forceHeight:true
+	});
+
+	//$('#screens').css({"margin-top":$(".intro_text_container").height() + 'px'})
+
 });

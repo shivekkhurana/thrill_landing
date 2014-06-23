@@ -11,15 +11,10 @@
 body{
 	font-family: avenir;
 	font-weight: 100;
-	height: 100%;
-}
-
-img{
-	max-height:100%;
 }
 
 #container{
-	display: none;
+	height: 100%;
 }
 
 #loader{
@@ -48,10 +43,12 @@ img{
 	padding:5px;
 }
 
-#intro_text{
+
+.intro_text_container{
 	font-family:sacramento;
 	color:#fff;
-	margin:100px 0 80px 0;
+	position: fixed;
+	z-index: 1;
 	font-size: 100px;
 	text-align: center;
 }
@@ -61,61 +58,22 @@ img{
 }
 
 #screens{
-	width:100%;
-	height: 100%;
-	display: block;
-}
-
-.screen_container{
-	z-index:999999;
 	position: relative;
-	display: block;
-	float: left;
-	width: 100%;
+	max-width: 100%;
 }
-
-.phone{
-	max-width: 360px;
-	float:left;
-	margin-top: 20px;
-	margin-left: 40px;
-}
-
-.description{
-	width: 660px;
-	background: rgba(0,0,0,0.5);
-	padding:20px;
-	color:#fff;
-	float: left;
-	margin-left: 100px;
-	z-index:999998;
-	margin-top: 200px;
-}
-
-.description .title{
-	font-size: 25px;
-	margin-bottom: -15px;
-	text-align: center;
-}
-
-.description .connector{
-	margin-left: -140px;
-}
-
-.meta{
+#meta{
 	width: 100%;
 	background: rgba(255,255,255,0.15);
-	float:left;
 	margin-bottom: 70px;
 }
 
-.meta .contact{
+#meta .contact{
 	padding:30px;
 	color:#fff;
 	font-family: avenir;
 }
 
-.meta .contact h3 {
+#meta .contact h3 {
 	color:#fff;
 	font-family: avenir;	
 }
@@ -155,8 +113,5 @@ img{
 	max-height: 50px;
 }
 
-.screen{
-	max-height: 85%;
-}
 /* Everything good upto 768px. */
 @media only screen and (max-width: 767px) {}
