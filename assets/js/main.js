@@ -16,6 +16,7 @@ $(function(){
 	BV.getPlayer().on('durationchange',function(){
 		$('#loader').fadeOut(0);
 		$('#big-video-wrap').fadeIn();
+		$('#container').fadeIn();
 		$('#intro_text').addClass("animated fadeInUp");
 	});
 

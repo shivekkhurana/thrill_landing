@@ -31,6 +31,7 @@ img {
 }
 
 #container{
+	display: none;
 	z-index: 999;
 }
 #big-video-wrap{
