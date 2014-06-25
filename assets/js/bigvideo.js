@@ -32,7 +32,7 @@
 			forceAutoplay:false,
 			controls:false,
 			doLoop:false,
-			container:$('body'),
+			container:$('#video_container'),
 			shrinkable:false
 		};
 
@@ -48,7 +48,7 @@
 			isSeeking = false,
 			isPlaying = false,
 			isQueued = false,
-			isAmbient = false,
+			isAmbient = true,
 			playlist = [],
 			currMediaIndex,
 			currMediaType;
