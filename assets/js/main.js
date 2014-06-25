@@ -20,14 +20,12 @@ $(function(){
 	});
 
 	$('#intro_text').css({
-		"margin-top":($(window).height()/2) - 60 + 'px',
+		"top":($(window).height()/2) - 60 + 'px',
 		"margin-bottom":($(window).height()/2) - 60 + 'px'
 	});
 	
 
-	var s = skrollr.init({
-		forceHeight:true
-	});
+	var s = skrollr.init();
 
 	$('#screens').css({"margin-top":$(window).height() + 'px'})
 
