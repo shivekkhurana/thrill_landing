@@ -27,6 +27,11 @@ img {
 	width: 100%;
 	top:0;
 	height: 100%;
+	z-index: 0;
+}
+
+#container{
+	z-index: 999;
 }
 #big-video-wrap{
 	display: none;
@@ -61,10 +66,6 @@ img {
 	color:#e65c51;
 }
 
-.screen_container{
-	margin-bottom: 0px;
-}
-
 .phone{
 	max-width: 20%;
 }
@@ -75,7 +76,7 @@ img {
 	color:#fff;
 	float: left;
 	z-index:999998;
-	margin-top: 200px;
+	margin-top: 50px;
 }
 
 .description .title{
